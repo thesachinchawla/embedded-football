@@ -9,24 +9,20 @@
     <script type="text/javascript" src="jscript2.js"></script>
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
 </head>
 
 <script>
-
-
-
     var player1Count = 0;
     var player2Count = 0;
     var preventKey = false;
     $(document).ready(function () {
-
         var player1 = document.getElementById('player1');
         var player2 = document.getElementById('player2');
         var winner = document.getElementById('winner');
@@ -34,11 +30,8 @@
         var timerCount = document.getElementById('timerCount');
         player1.innerHTML = 0
         player2.innerHTML = 0
-     
-
     });
     document.addEventListener("keypress", function (event) {
-
         //press a for player 1
         if (event.keyCode == 097 && !preventKey) {
             player1Count++;
@@ -55,10 +48,7 @@
             window.location.href = 'index.html';
 
         }
-
         console.log("sasasasa", player1Count, player2Count)
-
-
     });
 
 
@@ -67,8 +57,6 @@
         window.counter = setInterval(function () {
             timer--; //decrement the time value
             console.log(timer)
-
-
             if (timer < 0) { //if timer is less than 0
                 clearInterval(window.counter); //clear counter
                 declareWinner();
@@ -77,22 +65,19 @@
             if (timer <= 9) { //if timer is less than 9
                 timerCount.textContent = "0" + timer; //add a 0 before time value
             } else timerCount.textContent = timer; //add a 0 before time value
-
         }, 1000);
     }
 
 
     function declareWinner() {
-        if (player1Count > player2Count) {
+        if (player1Count >= player2Count) {
             $('#myModal-2').modal('show');
-            winner.src = `/assets/screens-7.jpg`;
+            winner.src = `./assets/screens-7.jpg`;
             winnerScore.innerHTML = player1Count;
-
         } else {
             $('#myModal-2').modal('show');
-            winner.src = `/assets/screens-6.jpg`;
+            winner.src = `./assets/screens-6.jpg`;
             winnerScore.innerHTML = player2Count;
-
         }
         preventKey = true;
     }
@@ -101,20 +86,17 @@
 
 <body class="background-image-3" onload="startTimer()">
     <div class="row">
-        <div class="col-6 d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="col-6 d-flex align-items-center justify-content-center" style="height: 85vh;">
             <div class="inner-row  ">
-
                 <div>
                     <p class="display-number" id="player1"></p>
                 </div>
-
             </div>
         </div>
         <div class="timer">
             <h1 id="timerCount">15</h1>
-
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="col-6 d-flex align-items-center justify-content-center" style="height: 85vh;">
             <div class="inner-row  ">
                 <div>
                     <p class="display-number" id="player2"></p>
@@ -122,9 +104,6 @@
             </div>
         </div>
     </div>
-
-
-
     <!-- The Modal -->
     <div class="modal" id="myModal-2">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -132,15 +111,9 @@
                 <div class="modal-body">
                     <img id="winner" src="" alt="">
                     <h1 id="winnerScore"></h1>
-
                 </div>
-
-
-
             </div>
         </div>
     </div>
-
 </body>
-
 </html>

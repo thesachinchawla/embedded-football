@@ -6,11 +6,9 @@
 
 
 .display-number {
-
     font-size: 14rem;
     color: red;
     margin-top: 12rem;
-
     font-weight: 500;
 }
 
@@ -29,6 +27,8 @@
     overflow: hidden;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
     background-attachment: fixed;
 }
 
@@ -41,22 +41,17 @@
 }
 
 .player {
-
     color: chartreuse;
     font-size: 4rem;
-
 }
 
 .timer{
-
     position: absolute;
-    top: 47%;
+    top: 35%;
     color: white;
     left: 42%;
     width: auto !important;
     padding: 0rem !important;
-
-
 }
 
 #timerCount{
