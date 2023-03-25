@@ -1,0 +1,68 @@
+.display{
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+
+.display-number {
+
+    font-size: 14rem;
+    color: red;
+    margin-top: 12rem;
+
+    font-weight: 500;
+}
+
+
+
+.background-image-1{
+    background-image: url(./assets/screens-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-2{
+    background-image: url(./assets/modal1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.background-image-3{
+    background-image: url(./assets/screens-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+.player {
+
+    color: chartreuse;
+    font-size: 4rem;
+
+}
+
+.timer{
+
+    position: absolute;
+    top: 47%;
+    color: white;
+    left: 42%;
+    width: auto !important;
+    padding: 0rem !important;
+
+
+}
+
+#timerCount{
+    font-size: 10rem;
+}
+
+.col-6 {
+    padding: 0rem !important;
+}
+
+#winner {
+    width: -webkit-fill-available;
+}
