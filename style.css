@@ -18,22 +18,26 @@
 
 .background-image-1{
     background-image: url(./assets/screens-2.jpg);
+    overflow: hidden;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
 }
 
 .background-image-2{
     background-image: url(./assets/modal1.gif);
+    overflow: hidden;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
+    background-attachment: fixed;
 }
 
 .background-image-3{
     background-image: url(./assets/screens-4.jpg);
+    overflow: hidden;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
+    background-attachment: fixed;
 }
 
 .player {
