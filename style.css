@@ -28,12 +28,12 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
+    height: 85vh;
     background-attachment: fixed;
 }
 
 .background-image-3{
-    background-image: url(./assets/screens-4.jpg);
+    background-image: url(./assets/screens-4.png);
     overflow: hidden;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -47,9 +47,9 @@
 
 .timer{
     position: absolute;
-    top: 35%;
+    top: 48%;
     color: white;
-    left: 42%;
+    left: 44%;
     width: auto !important;
     padding: 0rem !important;
 }
@@ -64,4 +64,13 @@
 
 #winner {
     width: -webkit-fill-available;
+}
+
+
+.score-board{
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    font-size: 16rem;
+    color: white;
 }

@@ -53,7 +53,7 @@
 
 
     function startTimer() {
-        var timer = 16;
+        var timer = 15;
         window.counter = setInterval(function () {
             timer--; //decrement the time value
             console.log(timer)
@@ -72,11 +72,11 @@
     function declareWinner() {
         if (player1Count >= player2Count) {
             $('#myModal-2').modal('show');
-            winner.src = `./assets/screens-7.jpg`;
+            winner.src = `./assets/11.png`;
             winnerScore.innerHTML = player1Count;
         } else {
             $('#myModal-2').modal('show');
-            winner.src = `./assets/screens-6.jpg`;
+            winner.src = `./assets/10.png`;
             winnerScore.innerHTML = player2Count;
         }
         preventKey = true;
@@ -110,7 +110,7 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <img id="winner" src="" alt="">
-                    <h1 id="winnerScore"></h1>
+                    <h1 class="score-board" id="winnerScore"></h1>
                 </div>
             </div>
         </div>
